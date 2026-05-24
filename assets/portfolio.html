@@ -329,9 +329,14 @@
   }
 
   @media print {
-    body { margin: 0; }
+    body { margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     .page { width: 210mm; margin: 0; }
     .no-print { display: none; }
+    .sidebar { background: #111111 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .skill-fill { background: #e63946 !important; }
+    .acca-badge { background: #e63946 !important; }
+    .mission-box { background: #111111 !important; }
+    .skill-card { background: #f9f9f9 !important; }
   }
 
   /* Print button */
